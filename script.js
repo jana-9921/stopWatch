@@ -50,7 +50,7 @@ if (interval == null) {
 });
 
 pause.addEventListener("click", () => {
-    clickS.play
+    clickS.play();
     if (interval === null) {
         ticks.play();
         pause.innerText = "Pause";
