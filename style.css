@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 85%;
+    box-shadow: 3px 3px 20px grey;
+    background-color: rgb(207,226,243);
+    border-radius: 20px;
+}
+
+#star img {
+    width: 150px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+#timer_ct {
+    position: relative;
+    top: 80px;
+    background-color: rgb(21,70,114);
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-shadow: 3px 3px 20px grey;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+#btn_ct {
+    position: relative;
+    top: 180px;
+    display: flex;
+    gap: 100px;
+}
+
+h2 {
+    font-size: 5em;
+    color: white;
+}
+
+button {
+    font-size: 3.5em;
+    background-color: rgb(2,25,46);
+    color: white;
+    transition: 0.3 ease-in-out;
+    border-radius: 25px;
+    padding: 10px ;
+    width: 250px;
+}
+
+button:hover {
+    background-color: rgb(5, 48, 88);
+}
+
+button:disabled {
+    background-color: gray;
+}
