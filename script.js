@@ -52,7 +52,7 @@ if (interval == null) {
 pause.addEventListener("click", () => {
     clickS.play();
     if (interval === null) {
-        ticks.play();
+        tickS.play();
         pause.innerText = "Pause";
         interval = setInterval( function () {
             vSec++;
