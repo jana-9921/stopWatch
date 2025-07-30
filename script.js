@@ -5,7 +5,8 @@ let vSecond = document.getElementById("v_seconds");
 let start = document.getElementById("startbtn");
 let pause = document.getElementById("pausebtn");
 let stopb = document.getElementById("stopbtn");
-let sound = document.getElementsByTagName("audio")[0];
+let clickS = document.getElementById("click");
+let tickS = document.getElementById("tick");
 
 let vSec = 0;
 let sec = 0;
@@ -14,11 +15,12 @@ let hr = 0;
 let interval = null;
 pause.disabled = true;
 stopb.disabled = true;
-sound.loop = true
+tickS.loop = true
 
 start.addEventListener("click", () => {
 if (interval == null) {
-    sound.play()
+    clickS.play()
+    tickS.play()
     pause.disabled = false;
     stopb.disabled = false;
     start.disabled = true;
@@ -48,8 +50,9 @@ if (interval == null) {
 });
 
 pause.addEventListener("click", () => {
+    clickS.play
     if (interval === null) {
-        sound.play();
+        ticks.play();
         pause.innerText = "Pause";
         interval = setInterval( function () {
             vSec++;
@@ -75,7 +78,7 @@ pause.addEventListener("click", () => {
         }, 10);
 
     } else {
-        sound.pause();
+        tickS.pause();
         pause.innerText = "Resume";
         clearInterval(interval);
         interval = null;
@@ -83,7 +86,8 @@ pause.addEventListener("click", () => {
 });
 
 stopb.addEventListener("click", () => {
-    sound.pause();
+    clickS.play()
+    tickS.pause();
     start.disabled = false;
     pause.disabled = true;
     stopb.disabled = true;
